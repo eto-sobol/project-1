@@ -86,6 +86,10 @@ hr {
   margin-bottom: 104.6px;
 }
 
+.menu-btn {
+  display: none;
+}
+
 .top-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,7 +282,7 @@ hr {
 
 @media (max-width: 667px) {
   .container {
-    max-width: 319px;
+    width: 319px;
   }
   .header {
     display: none;
@@ -307,9 +311,55 @@ hr {
   .lang-container {
     display: none;
   }
+  .menu-and-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .top-menu {
+    width: 33px;
+    height: 19.9px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  .menu-btn {
+    display: block;
+    width: 33px;
+    height: 19.9px;
+    background-color: #fff;
+    position: relative;
+  }
+  .menu-btn span,
+  .menu-btn span::before,
+  .menu-btn span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    width: 33px;
+    height: 2px;
+    background-color: #070707;
+  }
+  .menu-btn span::before,
+  .menu-btn span::after {
+    content: '';
+    display: block;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .menu-btn span::before {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  .menu-btn span::after {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
   .top-illustration {
     min-height: 478px;
-    background: url(img/top-img-650.png);
+    background: url(img/top-img-650.png) no-repeat;
   }
   .about-me-bkg {
     padding-top: 81px;
@@ -340,6 +390,9 @@ hr {
   }
   .skills-img {
     padding-bottom: 81.71px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .skills-bottom {
     padding-bottom: 0;
