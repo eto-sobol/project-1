@@ -96,6 +96,12 @@ hr {
   margin-bottom: 30.64px;
 }
 
+.top-illustration {
+  margin: 0 auto;
+  min-height: 378px;
+  background: url(img/top-img.png);
+}
+
 .main-heading {
   font-family: 'Gilroy-Bold';
   width: 123.51px;
@@ -268,5 +274,120 @@ hr {
   line-height: 17px;
   text-align: center;
   color: #828282;
+}
+
+@media (max-width: 667px) {
+  .container {
+    max-width: 319px;
+  }
+  .header {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+  .top {
+    padding-top: 65px;
+    margin-bottom: 83px;
+    margin-top: 0;
+  }
+  .top-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 36.94px;
+  }
+  .who-is {
+    margin-top: 23px;
+  }
+  .lang-container {
+    display: none;
+  }
+  .top-illustration {
+    min-height: 478px;
+    background: url(img/top-img-650.png);
+  }
+  .about-me-bkg {
+    padding-top: 81px;
+    padding-bottom: 76px;
+  }
+  .about-me {
+    max-width: 316px;
+    margin: 0 auto;
+  }
+  .skills-container {
+    margin-top: 83px;
+    margin-bottom: 98.73px;
+  }
+  .skills-text {
+    padding-top: 50px;
+    padding-bottom: 70.96px;
+  }
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    max-width: 166.46px;
+  }
+  .skills-img {
+    padding-bottom: 81.71px;
+  }
+  .skills-bottom {
+    padding-bottom: 0;
+  }
+  .portfolio-bkg {
+    padding-top: 81px;
+    padding-bottom: 3px;
+  }
+  .portfolio-heading {
+    margin-bottom: 64.94px;
+  }
+  .portfolio-link {
+    padding-bottom: 77.97px;
+  }
+  .portfolio-img {
+    margin-bottom: 35px;
+    max-width: 316px;
+  }
+  .footer {
+    padding-top: 82px;
+    padding-bottom: 90px;
+  }
+  .contacts-container {
+    margin-bottom: 48px;
+  }
+  .contacts-text {
+    margin-top: 27.03px;
+    margin-bottom: 39.84px;
+  }
+  .send-message {
+    padding: 12px 97px;
+  }
+  .icons-container {
+    max-width: 315.11px;
+  }
+  .rights {
+    margin-top: 48.08px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 700px;
+  }
+  .skills-img {
+    max-width: 120px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
