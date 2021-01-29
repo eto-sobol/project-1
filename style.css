@@ -62,6 +62,7 @@ body {
   list-style-type: none;
   padding-top: 33px;
   padding-bottom: 32px;
+  border-bottom: 1px solid #828282;
 }
 
 .header-link {
@@ -73,12 +74,24 @@ body {
   color: #828282;
 }
 
+.header-link:hover {
+  color: #070707;
+}
+
+.header-link:active {
+  color: #828282;
+}
+
 .home {
   color: #070707;
 }
 
-hr {
-  border: 1px solid #828282;
+.home:hover {
+  color: #828282;
+}
+
+.home:active {
+  color: #070707;
 }
 
 .top {
@@ -218,8 +231,13 @@ hr {
 }
 
 .portfolio-link {
-  padding-bottom: 99.09px;
+  margin-bottom: 99.09px;
   text-align: center;
+}
+
+.portfolio-link:hover {
+  color: #828282;
+  text-decoration: none;
 }
 
 .footer {
@@ -258,6 +276,16 @@ hr {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
+  color: #FFFFFF;
+}
+
+.send-message:hover {
+  background: #828282;
+  color: #070707;
+}
+
+.send-message:active {
+  background: #070707;
   color: #FFFFFF;
 }
 
@@ -405,7 +433,7 @@ hr {
     margin-bottom: 64.94px;
   }
   .portfolio-link {
-    padding-bottom: 77.97px;
+    margin-bottom: 77.97px;
   }
   .portfolio-img {
     margin-bottom: 35px;
