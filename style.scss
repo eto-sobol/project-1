@@ -58,6 +58,12 @@ body {
     border-bottom: 1px solid #828282;
 }
 
+.nav {
+    position: sticky;
+    top: 0;
+    background: #FFFFFF;
+}
+
 .header-link {
     font-family: 'Gilroy-Bold';
     text-decoration: none;

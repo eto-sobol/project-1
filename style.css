@@ -1,19 +1,17 @@
 @font-face {
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   src: url("fonts/gilroy-bold.eot");
   /* IE 9 Compatibility Mode */
   src: url("fonts/gilroy-bold.eot?#iefix") format("embedded-opentype"), url("fonts/gilroy-bold.woff2") format("woff2"), url("fonts/gilroy-bold.woff") format("woff"), url("fonts/gilroy-bold.ttf") format("truetype"), url("fonts/gilroy-bold.svg#gilroy-bold") format("svg");
   /* Chrome < 4, Legacy iOS */
 }
-
 @font-face {
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   src: url("fonts/gilroy-medium.eot");
   /* IE 9 Compatibility Mode */
   src: url("fonts/gilroy-medium.eot?#iefix") format("embedded-opentype"), url("fonts/gilroy-medium.woff2") format("woff2"), url("fonts/gilroy-medium.woff") format("woff"), url("fonts/gilroy-medium.ttf") format("truetype"), url("fonts/gilroy-medium.svg#gilroy-medium") format("svg");
   /* Chrome < 4, Legacy iOS */
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -24,20 +22,13 @@ body {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-height: 100vh;
 }
 
 .content {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 .container {
@@ -46,27 +37,30 @@ body {
 }
 
 .text {
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   font-size: 18px;
   line-height: 22px;
   color: #070707;
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   list-style-type: none;
   padding-top: 33px;
   padding-bottom: 32px;
   border-bottom: 1px solid #828282;
 }
 
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #FFFFFF;
+}
+
 .header-link {
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
@@ -104,12 +98,8 @@ body {
 }
 
 .top-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 30.64px;
 }
 
@@ -120,7 +110,7 @@ body {
 }
 
 .main-heading {
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   width: 123.51px;
   font-size: 47.3392px;
   line-height: 59px;
@@ -139,11 +129,9 @@ body {
 }
 
 .lang {
-  font-family: 'Gilroy-Bold';
-  -webkit-transform-origin: 80% 0;
-          transform-origin: 80% 0;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  font-family: "Gilroy-Bold";
+  transform-origin: 80% 0;
+  transform: rotate(-90deg);
   height: 18px;
   width: 75px;
   margin-top: 45px;
@@ -170,7 +158,7 @@ body {
 }
 
 .heading {
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   font-size: 34px;
   line-height: 42px;
   text-align: center;
@@ -198,12 +186,8 @@ body {
 }
 
 .skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .portfolio-bkg {
@@ -213,13 +197,8 @@ body {
 }
 
 .portfolio-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .portfolio-heading {
@@ -246,13 +225,8 @@ body {
 }
 
 .contacts-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-bottom: 85.78px;
 }
 
@@ -269,9 +243,7 @@ body {
   text-decoration: none;
   border-radius: 50px;
   display: inline-block;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   font-family: "Gilroy-Bold";
   font-size: 18px;
   line-height: 22px;
@@ -292,12 +264,8 @@ body {
 .icons-container {
   max-width: 342.18px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .rights {
@@ -312,47 +280,47 @@ body {
   .container {
     width: 319px;
   }
+
   .header {
     display: none;
   }
+
   hr {
     display: none;
   }
+
   .top {
     padding-top: 65px;
     margin-bottom: 83px;
     margin-top: 0;
   }
+
   .top-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-bottom: 36.94px;
   }
+
   .who-is {
     margin-top: 23px;
   }
+
   .lang-container {
     display: none;
   }
+
   .menu-and-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
+
   .top-menu {
     width: 33px;
     height: 19.9px;
     margin-right: 5px;
     margin-top: 10px;
   }
+
   .menu-btn {
     display: block;
     width: 33px;
@@ -360,9 +328,10 @@ body {
     background-color: #fff;
     position: relative;
   }
+
   .menu-btn span,
-  .menu-btn span::before,
-  .menu-btn span::after {
+.menu-btn span::before,
+.menu-btn span::after {
     position: absolute;
     top: 50%;
     margin-top: -1px;
@@ -370,105 +339,115 @@ body {
     height: 2px;
     background-color: #070707;
   }
+
   .menu-btn span::before,
-  .menu-btn span::after {
-    content: '';
+.menu-btn span::after {
+    content: "";
     display: block;
-    -webkit-transition: 0.2s;
     transition: 0.2s;
   }
+
   .menu-btn span::before {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
+    transform: translateY(-5px);
   }
+
   .menu-btn span::after {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    transform: translateY(5px);
   }
+
   .top-illustration {
     min-height: 478px;
     background: url(img/top-img-650.png) no-repeat;
   }
+
   .about-me-bkg {
     padding-top: 81px;
     padding-bottom: 76px;
   }
+
   .about-me {
     max-width: 316px;
     margin: 0 auto;
   }
+
   .skills-container {
     margin-top: 83px;
     margin-bottom: 98.73px;
   }
+
   .skills-text {
     padding-top: 50px;
     padding-bottom: 70.96px;
   }
+
   .skills {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 0 auto;
     max-width: 166.46px;
   }
+
   .skills-img {
     padding-bottom: 81.71px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
+
   .skills-bottom {
     padding-bottom: 0;
   }
+
   .portfolio-bkg {
     padding-top: 81px;
     padding-bottom: 3px;
   }
+
   .portfolio-heading {
     margin-bottom: 64.94px;
   }
+
   .portfolio-link {
     margin-bottom: 77.97px;
   }
+
   .portfolio-img {
     margin-bottom: 35px;
     max-width: 316px;
   }
+
   .footer {
     padding-top: 82px;
     padding-bottom: 90px;
   }
+
   .contacts-container {
     margin-bottom: 48px;
   }
+
   .contacts-text {
     margin-top: 27.03px;
     margin-bottom: 39.84px;
   }
+
   .send-message {
     padding: 12px 97px;
   }
+
   .icons-container {
     max-width: 315.11px;
   }
+
   .rights {
     margin-top: 48.08px;
     font-size: 18px;
     line-height: 22px;
   }
 }
-
 @media (max-width: 1024px) {
   .container {
     max-width: 700px;
   }
+
   .skills-img {
     max-width: 120px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
